@@ -4,10 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome</title>
-    <link rel="stylesheet" href="navbar.css">
     <link rel="stylesheet" href="container.css">
 </head>  
 <style>
+
+    * {
+    padding:0;
+     margin:0;
+     }
+     
     .container > nav{
         position: absolute;
         top:50%;
@@ -32,23 +37,7 @@
     }
 </style> 
 <body>
-    <nav class="h_navbar">
-        <ul class="left-side">
-            <li><p>Student Information</p></li>
-        </ul>    
-        <ul class="right-side">
-            <li><a href="">Name(ID)</a></li>
-            <li ><a href="signin_v1.html">Logout</a></li>
-        </ul>
-    </nav>
-  
-    <nav class="v_navbar">
-        <ul>    
-       <li><img src="Photoes/home.png"><a href="Student-home.html">Home</a></li>       
-        <li><img src="Photoes/info.png"><a href="">Information</a></li>        
-        <li><img src="Photoes/timetable.png"><a href="">TimeTable</a></li> 
-      </ul>  
-    </nav>
+    <iframe src="navbar.html" style="display: block; border: none; height: 100vh; width: 100vw;"></iframe>
 
     <div class="container">
         <nav>

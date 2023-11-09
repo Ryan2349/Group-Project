@@ -4,10 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="stylesheet" href="navbar.css">
     <link rel="stylesheet" href="container.css">
 </head>
 <style>
+    * {
+    padding:0;
+     margin:0;
+     }
+
     .course{
         margin-top: 20px;
         margin-left: 20px;
@@ -29,50 +33,48 @@
     }
 
     .course:hover{
-        box-shadow: 2px 2px gray 0.5;
+        background-color: palevioletred;
+        cursor: pointer;
     }
 
     .course > a:hover{
         color: white; 
     }
+
 </style>   
 <body>
-    <nav class="h_navbar">
-        <ul class="left-side">
-            <li><p>Student Home</p></li>
-        </ul>    
-        <ul class="right-side">
-            <li><a href="">Name(ID)</a></li>
-            <li ><a href="signin_v1.html">Logout</a></li>
-        </ul>
-    </nav>
-  
-    <nav class="v_navbar">
-        <ul>    
-       <li><img src="Photoes/home.png"><a href="Student-home.html">Home</a></li>       
-        <li><img src="Photoes/info.png"><a href="">Information</a></li>        
-        <li><img src="Photoes/timetable.png"><a href="">TimeTable</a></li> 
-      </ul>  
-    </nav>
+    <iframe src="navbar.html" style="display: block; border: none; height: 100vh; width: 100vw;"></iframe>
 
     <div class="container">
+
+        <!-- Course 1 (C1) -->
+        <a href="Student-C1.html">
         <div class="course">
-            <a href="Student-C1.html">
             <h1>SE123</h1>
             <hr>
             <img src="" alt="Course Photo">
             <p>Software Engine</p>
+        </div>
         </a>
-        </div>
-        <div class="course">
-            
-        </div>
-        <div class="course">
 
+         <!-- Course 2 (C2) -->
+        <a>
+        <div class="course">   
         </div>
-        <div class="course">
+        </a>
 
+         <!-- Course 3 (C3) -->
+         <a>
+        <div class="course">
         </div>
+        </a>
+
+         <!-- Course 4 (C4) -->
+         <a>
+        <div class="course"></div>
+        </div>
+        </a>
+    
     </div>
 
 </body>
