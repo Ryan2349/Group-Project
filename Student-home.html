@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="container.css">
+</head>
+<style>
+    .course{
+        margin-top: 20px;
+        margin-left: 20px;
+        width: 250px;
+        height: 300px;
+        box-shadow: 0 0 2px 2px gray; 
+    }
+
+    h1{
+        text-align: center;
+    }
+
+    .course > img{
+        float: left;
+    }
+
+    .course > p{
+      float: right;
+    }
+
+    .course:hover{
+        box-shadow: 2px 2px gray 0.5;
+    }
+
+    .course > a:hover{
+        color: white; 
+    }
+</style>   
+<body>
+    <nav class="h_navbar">
+        <ul class="left-side">
+            <li><p>Student Home</p></li>
+        </ul>    
+        <ul class="right-side">
+            <li><a href="">Name(ID)</a></li>
+            <li ><a href="signin_v1.html">Logout</a></li>
+        </ul>
+    </nav>
+  
+    <nav class="v_navbar">
+        <ul>    
+       <li><img src="Photoes/home.png"><a href="Student-home.html">Home</a></li>       
+        <li><img src="Photoes/info.png"><a href="">Information</a></li>        
+        <li><img src="Photoes/timetable.png"><a href="">TimeTable</a></li> 
+      </ul>  
+    </nav>
+
+    <div class="container">
+        <div class="course">
+            <a href="Student-C1.html">
+            <h1>SE123</h1>
+            <hr>
+            <img src="" alt="Course Photo">
+            <p>Software Engine</p>
+        </a>
+        </div>
+        <div class="course">
+            
+        </div>
+        <div class="course">
+
+        </div>
+        <div class="course">
+
+        </div>
+    </div>
+
+</body>
+</html>
