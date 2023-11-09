@@ -3,27 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Staff-home</title>
-    <link rel="stylesheet" href="navbar.css">
+    <title>Document</title>
     <link rel="stylesheet" href="container.css">
 </head>
-<body>
-    <nav class="h_navbar">
-        <ul class="left-side">
-            <li><p>Staff Timetable</p></li>
-        </ul>    
-        <ul class="right-side">
-            <li><a href="">Name(ID)</a></li>
-            <li ><a href="signin.html">Logout</a></li>
-        </ul>
-    </nav>
+<style>
+      * {
+    padding:0;
+     margin:0;
+     }
 
-    <nav class="v_navbar">
-        <ul>    
-       <li><img src="Photoes/home.png"><a href="Student-home.html">Home</a></li>       
-        <li><img src="Photoes/info.png"><a href="">Information</a></li>        
-        <li><img src="Photoes/timetable.png"><a href="">TimeTable</a></li> 
-      </ul>  
-    </nav>
+     .search-bar {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  width: calc(100% - 50px);
+  margin: 0;
+  padding: 0;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-bar input {
+  flex: 1;
+  padding: 5px;
+  margin-right: 10px;
+  border: none;
+  outline: none;
+}
+
+.search-bar img {
+  width: 24px;
+  height: 24px;
+}
+
+</style>
+<body>
+    <iframe src="navbar.html" style="display: block; border: none; height: 100vh; width: 100vw;"></iframe>
+
+    <div class="container">
+        <div class="search-bar">
+            <img src="Photoes/search.png">
+            <input type="" placeholder="" name="">
+        </div>
+    </div>
+
 </body>
 </html>

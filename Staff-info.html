@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="container.css">
+</head>
+<style>
+
+    * {
+    padding:0;
+     margin:0;
+     }
+     
+    .container > nav{
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%, -50%);
+        border: 1px solid black;
+        padding: 20px;
+        background-color: cornsilk;
+    }
+
+    .btn{
+        background-color: rgb(85, 255, 0);
+        color: rgb(255, 255, 255);
+        border: none;
+        border-radius: 5px;
+        font-size: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 20px;
+        padding-right:20px;
+        cursor: pointer;
+    }
+</style> 
+<body>
+    <iframe src="navbar.html" style="display: block; border: none; height: 100vh; width: 100vw;"></iframe>
+
+    <div class="container">
+        <nav>
+            <form>
+                <div>
+                    <label for="">Name: (Only Show)</label>
+                </div>
+                <br>
+                <div>
+                    <label for="">ID: (Only Show)</label>
+                </div>
+                <br>
+                <div>
+                    <label for="">Gender:</label>
+                    <br>
+                    <label for="">Male</label>
+                    <input type="radio" id="" name="" value="" checked>
+                    <label for="">Female</label>
+                    <input type="radio" id="" name="" value="">
+                </div>
+                <br>
+                <div>
+                    <label for="">Email:</label>
+                    <input type="" id="" name="" placeholder="">
+                </div>
+                <div>
+                    <label for="">Phone:</label>
+                    <input type="" id="" name="" placeholder="">
+                </div>
+                <div>
+                    <label for="">Emergency Contact:</label>
+                    <input type="" id="" name="" placeholder="">
+                </div>
+                <div>
+                    <label for="">no.</label>
+                    <input type="" id="" name="" placeholder="">
+                </div>
+                <br>
+                <div>
+                    <button class="btn">Submit</button>
+                </div>
+            </form>
+        </nav>
+    </div>
+</body>
+</html>

@@ -4,11 +4,11 @@
     flex-wrap: wrap;
     background-color: paleturquoise;
     overflow: hidden;
-    top: 50px;
+    top: 58px;
     width:calc(100% - 150px);
     margin-left: 150px;
     float: left;
-    height: 100vh;
+    height: calc(100vh - 58px);
     position: absolute;
     border-style: hidden;
     column-gap: 60px;
@@ -16,7 +16,6 @@
 
 @media screen and (max-width: 600px){
     .container{overflow: scroll;
-               justify-content: center;
-    
+               justify-content: center;    
     }
 }
