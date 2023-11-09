@@ -1,0 +1,22 @@
+.container{
+    border: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: paleturquoise;
+    overflow: hidden;
+    top: 50px;
+    width:calc(100% - 150px);
+    margin-left: 150px;
+    float: left;
+    height: 100vh;
+    position: absolute;
+    border-style: hidden;
+    column-gap: 60px;
+}
+
+@media screen and (max-width: 600px){
+    .container{overflow: scroll;
+               justify-content: center;
+    
+    }
+}
