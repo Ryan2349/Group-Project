@@ -6,8 +6,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign In</title>
 </head>
+<style>
+body{
+  background-color: transparent;
+}
 
+.heading1{
+text-align: center;
+font-size: 30px;
+width: 100%;
+border: 1px solid black;
+color: black;
+background-color: paleturquoise;
+
+}
+
+.container{   
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  padding: 40px;
+  margin-top: 40px;
+  border: 1px solid black;
+  border-radius: 2px;
+  background-color: gray;
+  box-shadow: 2px 2px 10px rgb(22, 18, 18);
+}
+
+label{
+  font-size: 10px;
+  color: rgb(0, 0, 0);
+
+}
+
+button{
+  margin-top: 10px;
+  font-size: 20px;
+  color: palevioletred;
+  background-color: palegoldenrod;
+  border: 1px solid rgb(227, 27, 27);
+  border-radius: 5px;
+}
+
+label{
+  color: paleturquoise;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 600px){
+.heading1{
+  font-size: 20px;
+}
+
+}
+
+</style>
 <body>
+
+  <div class="heading1"><h1>Login System</h1></div>
+
+  <div class="container">
     <form action="{%url 'signin' %}" method="post">
       {% csrf_token %}
         <label for="">UserID</label>
@@ -20,5 +79,6 @@
         <br>
         <button type="submit">Sign In</button>  
     </form>
+  </div>
 </body>
 </html>
