@@ -7,12 +7,13 @@
     <link rel="stylesheet" href="container.css">
 </head>
 <style>
-      * {
+
+    * {
     padding:0;
      margin:0;
      }
 
-     .search-bar {
+.search-bar {
   position: absolute;
   top: 20px;
   left: 50%;
@@ -41,6 +42,30 @@
   height: 24px;
 }
 
+.course-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 5px solid black; /* Corrected border syntax */
+  border-radius: 10px;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 500px;
+  over
+}
+
+.course{
+  height: 200px;
+  margin: 50px auto;
+  position: relative;
+  text-align: center;
+  width: 50%;
+  background-color: azure;
+}
+
 </style>
 <body>
     <iframe src="navbar.html" style="display: block; border: none; height: 100vh; width: 100vw;"></iframe>
@@ -50,6 +75,14 @@
             <img src="Photoes/search.png">
             <input type="" placeholder="" name="">
         </div>
+
+
+      <div class="course-container">
+        <div class="course"><a href="">Course 1</a></div>
+        <div class="course"><a href="">Course 2</a></div>
+        <div class="course"><a href="">Course 3</a></div>
+        <div class="course"><a href="">Course 4</a></div>
+      </div>
     </div>
 
 </body>
